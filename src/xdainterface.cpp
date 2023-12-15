@@ -171,10 +171,10 @@ void XdaInterface::registerPublishers()
 	{
 		registerCallback(new FreeAccelerationPublisher(node));
 	}
-	if (get_parameter("pub_transform", should_publish) && should_publish)
-	{
-		registerCallback(new TransformPublisher(node));
-	}
+	// if (get_parameter("pub_transform", should_publish) && should_publish)
+	// {
+	// 	registerCallback(new TransformPublisher(node));
+	// }
 	if (get_parameter("pub_positionLLA", should_publish) && should_publish)
 	{
 		registerCallback(new PositionLLAPublisher(node));
